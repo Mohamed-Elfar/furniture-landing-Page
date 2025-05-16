@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product-details.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light border-bottom"
+      role="navigation"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold border-0 fs-5"
+          href="/customer/home/home.html"
+        >
+          <img
+            class="w-100"
+            src="img/Furniture.png"
+            alt="Furniture logo"
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__btns">
+            <a class="btn text-white position-relative" id="cartLink" href="#">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span
+                class="badge position-absolute start-100 translate-middle rounded-pill"
+                id="cartCount"
+                aria-label="Items in cart"
+                >5</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="list-unstyled gap-2 d-flex flex-wrapmy-5 fs-6 switches">
+      <li class="list-item">
+        <a href="index.html" class="border-0">Home</a> &lt;
+      </li>
+      <li class="list-item"><a href="#" class="border-0">Products</a> &lt;</li>
+      <li class="list-item">
+        <a href="#" class="fw-bold border-0 active">product Details</a>
+      </li>
+    </ul>
+
+    <div class="container productDetails">
+      <div class="thumbnails">
+        <img src="img/productDetails/side2.jpg" alt="Chair thumbnail" />
+        <img src="img/productDetails/side3.jpg" alt="Chair thumbnail" />
+        <img src="img/productDetails/side1.jpg" alt="Chair thumbnail" />
+        <video src="img/productDetails/video.mp4" controls muted></video>
+      </div>
+
+      <div class="main-image">
+        <img src="img/chair.png" alt="Modern Black Chair" />
+      </div>
+
+      <div class="product-info">
+        <h2>Modern Black Chair</h2>
+        <div class="stars">★★★★★</div>
+        <div class="price">$75.00</div>
+
+        <label>Choose Color</label>
+        <div class="colors">
+          <div style="background: #2a2a2a"></div>
+          <div style="background: #6e7b8b"></div>
+          <div style="background: #cdd6d5"></div>
+        </div>
+
+        <div class="tabs top-tabs">
+          <div class="tab active" data-tab="materials">Materials</div>
+          <div class="tab" data-tab="shipping">Shipping</div>
+          <div class="tab" data-tab="returns">Return policy</div>
+        </div>
+
+        <!-- ✅ UPDATED MATERIALS SECTION -->
+        <div class="tab-content active" id="materials">
+          <p>Made with the following components:</p>
+          <div class="materials">
+            <ul>
+              <li>Seat Material: 6.5mm Duratek-infused matte plastic</li>
+              <li>Frame: Black strengthened alloy steel</li>
+              <li>Base: Reinforced wood and wire base</li>
+              <li>Feet: Plastic non-marking feet</li>
+              <li>Fill Material: Foam</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="shipping">
+          <p>
+            Shipping takes 3–5 business days. International shipping available.
+          </p>
+        </div>
+        <div class="tab-content" id="returns">
+          <p>
+            Return policy: Items can be returned within 30 days of delivery.
+          </p>
+        </div>
+
+        <div class="cart-actions">
+          <select class="quantity-select">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+          </select>
+          <button class="btn hightlight px-4 cart rounded-0">
+            Add to cart +
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-tabs-container">
+      <div class="tabs bottom-tabs">
+        <div class="tab active" data-tab="description">Description</div>
+        <div class="tab" data-tab="warranty">Warranty</div>
+        <div class="tab" data-tab="reviews">Reviews</div>
+      </div>
+      <div class="tab-content active" id="description">
+        <p>
+          The Modern Black Chair blends contemporary aesthetics with durable
+          construction for a premium seating experience. Crafted with a 6.5mm
+          Duratek-infused matte plastic seat and supported by a black
+          strengthened alloy steel frame, this chair is both stylish and
+          long-lasting. Its reinforced wood and wire base ensure stability,
+          while the plastic non-marking feet protect your floors from scuffs.
+          Padded with high-density foam, the chair provides superior comfort
+          whether used in a home office, living room, or professional setting.
+          Designed for modern spaces, it’s the perfect fusion of form and
+          function.
+        </p>
+      </div>
+
+      <div class="tab-content" id="warranty">
+        <p>
+          Warranty: 2-year manufacturer warranty included with the purchase.
+        </p>
+      </div>
+      <div class="tab-content" id="reviews">
+        <p>Customer Reviews: ★★★★☆ Great product, would buy again!</p>
+      </div>
+    </div>
+    <!-- Related Product Section -->
+    <section class="bestSelling container">
+      <h2 class="text-center mb-3">RELATED PRODUCTS</h2>
+
+      <div class="row row-cols-2 row-cols-sm-3 g-3 mt-3 justify-content-center">
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/1.png"
+                  alt="Venom movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Wall Art Decor to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">chair</p>
+                <h3 class="card-title m-0 fs-6">Modern white Chair</h3>
+                <span>$100,000</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative">
+              <a href="product-details.html"
+                ><img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/2.png"
+                  alt="Dunkirk movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Modern Black Chair to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6 w-90">Modern Beige Chair</h3>
+                <span>$120,00</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative">
+              <a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/3.png"
+                  alt="Batman & Superman movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Wooden Floor Lamp to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6">Modern Green Chair</h3>
+                <span>$200</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/4.png"
+                  alt="John Wick movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Mini Plant in Ceramic Pot to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6">Modern Yellow Chair</h3>
+                <span>$50</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/5.png"
+                  alt="Aquaman movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Minimalist White Vase to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6">Modern Bergandy Chair</h3>
+                <span>$100</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/6.png"
+                  alt="Black Panther movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Side Table with Magazine to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Table</p>
+                <h3 class="card-title m-0 fs-6 w-90">Modern Brown Chair</h3>
+                <span>$500</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/1.png"
+                  alt="Thor movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Round White Dining Table to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6 w-90">Modern green Chair</h3>
+                <span>$90,00</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 position-relative">
+            <picture class="card__image position-relative"
+              ><a href="product-details.html">
+                <img
+                  class="card-img-top w-100 rounded-0"
+                  src="img/related/2.png"
+                  alt="Bumblebee movie poster"
+                  loading="lazy"
+              /></a>
+              <button
+                class="btn border-0 bg-white position-absolute btnCart"
+                aria-label="Add Small Wooden Side Table to cart"
+              >
+                <span aria-hidden="true">Add To Cart</span>
+              </button>
+            </picture>
+            <div class="body__container d-flex">
+              <div class="card-body p-0">
+                <p class="m-0">Chair</p>
+                <h3 class="card-title m-0 fs-6 w-90">Modern Yellow Chair</h3>
+                <span>$750</span>
+              </div>
+              <div class="cartIcon hightlight fs-4 mt-3">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="wishlistIcon">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="my-5"> See All Products</a>
+    </section>
+
+    <footer class="footer p-5">
+      <div class="row row-cols-2 row-cols-md-3">
+        <div class="col">
+          <div class="footer__logo">
+            <img
+              src="img/Furniture.png"
+              alt="Furniture website logo"
+              class="w-100"
+              loading="lazy"
+            />
+          </div>
+          <p class="text-white my-5 w-75">
+            orem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="footer__social">
+            <ul class="list-group list-group-horizontal list-unstyled">
+              <li>
+                <a href="#" aria-label="Visit our Facebook page"
+                  ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our LinkedIn page"
+                  ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our Instagram page"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our Twitter page"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer__linkes">
+            <h2 class="text-white text-center">Quick Linkes</h2>
+            <ul class="list-unstyled text-white text-center">
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">Product</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-width mt-5 mt-md-0">
+          <div class="footer__contact">
+            <h2 class="text-white text-start ms-md-5 ps-md-5">Contact Us</h2>
+            <ul class="list-unstyled text-white mt-4">
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                info@example.com
+              </li>
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-phone me-2" aria-hidden="true"></i> +1 (234)
+                567-890
+              </li>
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                1234 Main St, City, Country
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/product-details.js"></script>
+  </body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Furniture Store - Discover stylish, affordable furniture for every room in your home."
+    />
+
+    <meta
+      property="og:title"
+      content="Furniture Store - Stylish & Affordable Home Furnishings"
+    />
+    <meta
+      property="og:description"
+      content="Shop premium furniture with exclusive discounts and free delivery!"
+    />
+
+    <meta property="og:image" content="img/home3.jpg" />
+    <title>Furniture Store</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light border-bottom"
+      role="navigation"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold border-0 fs-5"
+          href="/customer/home/home.html"
+        >
+          <img
+            class="w-100"
+            src="img/Furniture.png"
+            alt="Furniture logo"
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__btns">
+            <a class="btn text-white" id="loginBtn" href="#" type="button">
+              Login
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="btn text-white position-relative" id="cartLink" href="#">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span
+                class="badge position-absolute start-100 translate-middle rounded-pill"
+                id="cartCount"
+                aria-label="Items in cart"
+                >5</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main role="main">
+      <header>
+        <div class="header__content text-center">
+          <h1 class="header__title">
+            Your Home, Your Style Let Furniture Speak for You.
+          </h1>
+          <p class="header__subtitle">
+            Discover the perfect furniture for your home and lifestyle.
+          </p>
+        </div>
+      </header>
+      <div class="about d-flex justify-content-center">
+        <div class="about__trophy d-flex align-items-center">
+          <div class="about__icon">
+            <img
+              src="img/trophy.png"
+              alt="trophy image for High Quality"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__text text-capitalize">
+            <h3>High Quality</h3>
+            <p>Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="about__trophy d-flex align-items-center">
+          <div class="about__icon">
+            <img
+              src="img/protection.png"
+              alt="protection image for Warrany Protection"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__text text-capitalize">
+            <h3>Warranty Protection</h3>
+            <p>Over 12 Month</p>
+          </div>
+        </div>
+        <div class="about__trophy d-flex align-items-center">
+          <div class="about__icon">
+            <img
+              src="img/truck.png"
+              alt="truck image for Free Delivery"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__text text-capitalize">
+            <h3>Free Delivery</h3>
+            <p>Free delivery to you</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 pt-5">
+        <section class="discount">
+          <div
+            id="carouselExampleDark"
+            data-bs-ride="carousel"
+            class="carousel carousel-dark slide"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  class="d-block w-100"
+                  src="img/carousalOne.png"
+                  alt="Living room furniture on discount"
+                  loading="lazy"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>
+                    Get Discount up to <span class="hightlight">50%</span> off
+                    Today !
+                  </h3>
+                  <button
+                    class="btn border-0 text-white py-2 px-3 w-50"
+                    aria-label="Buy now with 50% discount"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item itemTwo" data-bs-interval="2000">
+                <img
+                  class="d-block w-100"
+                  src="img/carousalTwo.png"
+                  alt="discount image"
+                  loading="lazy"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>
+                    Flash Sale <span class="hightlight">30%</span> off Limited
+                    Time!
+                  </h3>
+                  <button
+                    class="btn border-0 text-white py-2 px-3 w-50"
+                    aria-label="Shop now with 30% discount"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="img/carousalOne.png"
+                  alt="discount image"
+                  loading="lazy"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>
+                    Special Offer
+                    <span class="hightlight">Buy 1 Get 1</span> Free!
+                  </h3>
+                  <button
+                    class="btn border-0 text-white py-2 px-3 w-50"
+                    aria-label="Grab this buy 1 get 1 free deal"
+                  >
+                    Grab Deal
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+              aria-label="Previous slide"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+              aria-label="Next slide"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="bestSelling">
+          <h2 class="text-center mb-3">BEST SELLING PRODUCTS</h2>
+          <ul
+            class="list-group list-group-horizontal list-unstyled text-muted mx-auto justify-content-center mt-4 mb-3"
+          >
+            <li class="list-item">All</li>
+            <li class="list-item">Best Sellers</li>
+            <li class="list-item active">New Arrivals</li>
+            <li class="list-item">Recommended</li>
+          </ul>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mt-3">
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/decor.png"
+                    alt="Venom movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Wall Art Decor to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Decor</p>
+                    <h3 class="card-title m-0 fs-6">
+                      Wall Art Decor – Tree Design
+                    </h3>
+                    <span>$1,999</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative">
+                  <a href="product-details.html"><img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/chair.png"
+                    alt="Dunkirk movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Modern Black Chair to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Chair</p>
+                    <h3 class="card-title m-0 fs-6 w-90">Modern Black Chair</h3>
+                    <span>$2,999</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative">
+                  <a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/nagaf.png"
+                    alt="Batman & Superman movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Wooden Floor Lamp to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Najaf</p>
+                    <h3 class="card-title m-0 fs-6">Wooden Floor Lamp</h3>
+                    <span>$200</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/plant.png"
+                    alt="John Wick movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Mini Plant in Ceramic Pot to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Plant</p>
+                    <h3 class="card-title m-0 fs-6">
+                      Mini Plant in Ceramic Pot
+                    </h3>
+                    <span>$50</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/vasa.png"
+                    alt="Aquaman movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Minimalist White Vase to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Vasa</p>
+                    <h3 class="card-title m-0 fs-6">Minimalist White Vase</h3>
+                    <span>$100</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/table.png"
+                    alt="Black Panther movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Side Table with Magazine to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Table</p>
+                    <h3 class="card-title m-0 fs-6 w-90">
+                      Side Table with Magazine
+                    </h3>
+                    <span>$500</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/tableTwo.png"
+                    alt="Thor movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Round White Dining Table to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Table</p>
+                    <h3 class="card-title m-0 fs-6 w-90">
+                      Round White Dining Table
+                    </h3>
+                    <span>$650</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0 position-relative">
+                <picture class="card__image position-relative"><a href="product-details.html">
+                  <img
+                    class="card-img-top w-100 rounded-0"
+                    src="img/tableThree.png"
+                    alt="Bumblebee movie poster"
+                    loading="lazy"
+                  /></a>
+                  <button
+                    class="btn border-0 bg-white position-absolute btnCart"
+                    aria-label="Add Small Wooden Side Table to cart"
+                  >
+                    <span aria-hidden="true">Add To Cart</span>
+                  </button>
+                </picture>
+                <div class="body__container d-flex">
+                  <div class="card-body p-0">
+                    <p class="m-0">Table</p>
+                    <h3 class="card-title m-0 fs-6 w-90">
+                      Small Wooden Side Table
+                    </h3>
+                    <span>$750</span>
+                  </div>
+                  <div class="cartIcon hightlight fs-4 mt-3">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="wishlistIcon">
+                  <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="my-5"> See All Products</a>
+        </section>
+        <section class="testimonials">
+          <h2 class="section-title">What Client Says About US</h2>
+          <div class="testimonial-container swiper">
+            <div class="swiper-wrapper d-flex flex-lg-row flex-column">
+              <div class="testimonial-card swiper-slide">
+                <p class="testimonial-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  sit voluptatum quam ipsa voluptates nostrum ut at vitae. In
+                  aperiam dicta minima consectetur provident amet labore?
+                  Aperiam recusandae iure optio? Magnam, cum! Laboriosam, autem!
+                  Tempora rerum a maiores facere necessitatibus suscipit sequi.
+                  Amet ipsa possimus, laboriosam mollitia hic error eum nulla
+                  blanditiis! Amet magnam ab ipsam inventore magni sint illum?
+                  Voluptas facilis optio excepturi voluptate consectetur. Autem
+                  rerum non, accusantium mollitia aliquid provident error fugit
+                  aliquam voluptas doloremque veritatis. Omnis id rerum ipsam
+                  veniam maxime laboriosam reiciendis, dolores ratione placeat!
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="img/client1.png"
+                    alt="Client Photo"
+                    class="client-img"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4 class="client-name">Kristin Watson</h4>
+                    <p class="client-title">Fashion designer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card swiper-slide">
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+                  qui ipsam molestias soluta magni veniam, provident, assumenda
+                  quae voluptatem officiis animi sunt voluptas minima dolorem ad
+                  nemo. Vitae, rerum labore. Nostrum laudantium totam dolorum ut
+                  quaerat doloremque sit aliquid necessitatibus ullam laboriosam
+                  pariatur, recusandae atque repellendus quibusdam autem quos!
+                  Ea culpa totam perferendis doloribus inventore expedita
+                  recusandae saepe aliquam sed. Nobis temporibus cum natus ipsum
+                  culpa qui, unde architecto fugiat molestiae perferendis,
+                  assumenda delectus accusantium omnis aliquam mollitia
+                  voluptatem aliquid dolores in ipsam ex repellendus. Laboriosam
+                  quibusdam eum nobis numquam?
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="img/client2.png"
+                    alt="Client Photo"
+                    class="client-img"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4 class="client-name">Esther Howard</h4>
+                    <p class="client-title">Fashion designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-nav">
+              <button
+                class="testimonial-prev"
+                aria-label="Previous testimonial"
+              >
+                ←
+              </button>
+              <button class="testimonial-next" aria-label="Next testimonial">
+                →
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="newSletter py-4 px-3">
+          <div class="row justify-content-center flex-sm-row">
+            <div class="col-12 col-sm-7 p-4 p-sm-3 p-md-4 p-lg-5">
+              <div class="newSletter_content px-5">
+                <h2 class="w-50">Subscribe To Our New Sletter</h2>
+                <p class="w-75 my-4">
+                  Subscribe to our email newsletter today to receive update on
+                  the latest news
+                </p>
+                <div class="btn-group">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    class="p-2 rounded-1 border-0"
+                  />
+                  <button
+                    class="btn border-0 py-1 px-2 text-white bg-highlight rounded-1"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-5 order-first order-sm-last align-content-center"
+            >
+              <div class="newSletter_img">
+                <img
+                  src="img/newSletter.png"
+                  class="w-100"
+                  alt=" intertio design image for new Sletter section"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer p-5">
+      <div class="row row-cols-2 row-cols-md-3">
+        <div class="col">
+          <div class="footer__logo">
+            <img
+              src="img/Furniture.png"
+              alt="Furniture website logo"
+              class="w-100"
+              loading="lazy"
+            />
+          </div>
+          <p class="text-white my-5 w-75">
+            orem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="footer__social">
+            <ul class="list-group list-group-horizontal list-unstyled">
+              <li>
+                <a href="#" aria-label="Visit our Facebook page"
+                  ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our LinkedIn page"
+                  ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our Instagram page"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Visit our Twitter page"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer__linkes">
+            <h2 class="text-white text-center">Quick Linkes</h2>
+            <ul class="list-unstyled text-white text-center">
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none">Product</a>
+              </li>
+              <li class="fs-5">
+                <a href="#" class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-width mt-5 mt-md-0">
+          <div class="footer__contact">
+            <h2 class="text-white text-start ms-md-5 ps-md-5">Contact Us</h2>
+            <ul class="list-unstyled text-white mt-4">
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                info@example.com
+              </li>
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-phone me-2" aria-hidden="true"></i> +1 (234)
+                567-890
+              </li>
+              <li class="fs-5 text-start ms-md-5 ps-md-5">
+                <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                1234 Main St, City, Country
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
